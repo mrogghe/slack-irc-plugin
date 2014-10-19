@@ -4,15 +4,23 @@ var config = {
     server: 'irc.freenode.com',
     nick: 'slackbot',
     username: 'slackbot-username',
-    token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX',
+    slackUrl: 'https://<yourorg>.slack.com/services/hooks/incoming-webhook?token=<yourtoken>',
     channels: {
         '#irc-channel password(optional)': '#slack-channel'
     },
     users: {
         '~irclogin': 'slackuser'
     }
-    // optionals
-    // silent: false // keep the bot quiet
+
+    ,floodProtection: true
+//    ,floodProtectionDelay: 1000
+//    ,port: 6667
+//    ,debug: false
+//    ,showErrors: false
+//    ,autoRejoin: true
+//    ,autoConnect: true
+//    ,secure: false
+
 };
 
 var slackbot = new slackbot.Bot(config);
