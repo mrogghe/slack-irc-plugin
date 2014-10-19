@@ -12,6 +12,7 @@ var config = {
         '~irclogin': 'slackuser'
     }
 
+    ,silent: true
     ,floodProtection: true
 //    ,floodProtectionDelay: 1000
 //    ,port: 6667
